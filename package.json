@@ -11,5 +11,8 @@
   },
   "preferGlobal": true,
   "author": "Brian Meek",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "command-line-args": "^5.1.1"
+  }
 }
