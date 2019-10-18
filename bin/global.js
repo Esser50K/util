@@ -58,6 +58,6 @@ if (options.help) {
 
 // Retrieve the first argument
 var myLibrary = require('../lib/index.js');
-if(!options.dest) throw new Error('please provide the --dest flag');
+if (!options.dest) throw new Error('please provide the --dest flag');
 
 myLibrary.createApi(options);
