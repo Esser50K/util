@@ -9,6 +9,7 @@
   "bin": {
     "createApi": "./bin/global.js"
   },
+  "private": false,
   "preferGlobal": true,
   "author": "Brian Meek",
   "license": "ISC",
