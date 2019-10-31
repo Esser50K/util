@@ -23,7 +23,7 @@ exports.structure = [{
             }
           }
         `
-    }, 
+    },
     {
         type: 'file',
         path: '.gitignore',
@@ -43,10 +43,11 @@ exports.structure = [{
         content: `
         const server = require('./server/config/app')();
         const config = require('./server/config/config');
-        const db = require('./server/config/db');
+        const db = require('./server/config/db'); // uncomment after you have added your MongoDB credentials
         
         //create the basic server setup 
-        server.create(config, db);
+        // server.create(config, db); // To use MongoDB, pass the db creds to the create method
+        server.create(config);
         
         //start the server
         server.start();`
@@ -83,15 +84,17 @@ module.exports = function () {
                         extended: false
                 }));
 
-                //connect the database
-                mongoose.connect(
-                        db.database,
-                        { 
-                                useNewUrlParser: true,
-                                useCreateIndex: true
-                        }
-                );
-
+                if(db) {
+                    //connect the database
+                    mongoose.connect(
+                            db.database,
+                            { 
+                                    useNewUrlParser: true,
+                                    useCreateIndex: true
+                            }
+                    );
+                }
+                
                 // Set up routes
                 routes.init(server);
         };
