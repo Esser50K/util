@@ -1,6 +1,6 @@
 {
   "name": "@bwdev/util",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "simple tool to automate things",
   "main": "./lib/index.js",
   "scripts": {
