@@ -56,7 +56,7 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 ## License
 
-This project is licensed under the WTFPL License - see the [http://www.wtfpl.net/](LICENSE) site for details
+This project is licensed under the WTFPL License - see the [LICENSE](http://www.wtfpl.net/) site for details
 
 <!-- ## Acknowledgments
 
