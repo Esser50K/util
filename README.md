@@ -58,8 +58,9 @@ See also the list of [contributors](https://github.com/your/project/contributors
 
 This project is licensed under the WTFPL License - see the [LICENSE](http://www.wtfpl.net/) site for details
 
-<!-- ## Acknowledgments
+<!-- ## Acknowledgements
 
 * Hat tip to anyone whose code was used
 * Inspiration
 * etc -->
+
